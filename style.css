@@ -49,16 +49,16 @@
 }
 
 .list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .item, .h3 {
-  list-style:none;
+  list-style: none;
 }
 
 .input, .btn{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -164,14 +164,14 @@
 
 /* Edit Task */
 .list .current-tasks__item .input[type="text"] {
-  display:none;
+  display: none;
 }
 
 .list .current-tasks__item_edit .input[type="text"] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .list .current-tasks__item_edit .label {
-  display:none;
+  display: none;
 }
