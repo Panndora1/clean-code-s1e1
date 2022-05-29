@@ -34,11 +34,8 @@
   margin: 0 auto 0;
 }
 
-.add-task__create,
-.current-tasks__name,
-.current-tasks__input,
-.completed-tasks__name,
-.completed-tasks__input {
+.label,
+.input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -159,7 +156,7 @@
 }
 
 /* Completed */
-.list#completed-tasks .label {
+.list#completed-tasks__list .label {
   text-decoration: line-through;
   color: #888;
 }
