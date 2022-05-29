@@ -143,34 +143,36 @@
   width: 226px;
 }
 
-.button.current-tasks__delete-btn .current-tasks__img,
-.button.completed-tasks__delete-btn .completed-tasks__img {
+.current-tasks__img,
+.completed-tasks__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.current-tasks__delete-btn .current-tasks__img:hover,
-.button.completed-tasks__delete-btn .completed-tasks__img:hover {
+.current-tasks__img:hover,
+.completed-tasks__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks__list .label {
+.completed-tasks__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .current-tasks__item .input[type="text"] {
+.list .item .input[type="text"] {
   display: none;
 }
 
-.list .current-tasks__item_edit .input[type="text"] {
+.list .current-tasks__item_edit .input[type="text"],
+.list .completed-tasks__item_edit .input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list .current-tasks__item_edit .label {
+.list .current-tasks__item_edit .label,
+.list .completed-tasks__item_edit .label {
   display: none;
 }
