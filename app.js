@@ -34,7 +34,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='tasks__label';
+    label.className="tasks__label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -46,7 +46,7 @@ var createNewTaskElement=function(taskString){
     editButton.className="tasks__edit-btn btn";
 
     deleteButton.className="tasks__delete-btn btn";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
     deleteButtonImg.className = "tasks__img";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -85,7 +85,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.tasks__text');
+    var editInput=listItem.querySelector(".tasks__text");
     var label=listItem.querySelector(".tasks__label");
     var editBtn=listItem.querySelector(".tasks__edit-btn");
     var containsClass=listItem.classList.contains("tasks__item_edit");
