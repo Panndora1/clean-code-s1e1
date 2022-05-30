@@ -34,8 +34,8 @@
   margin: 0 auto 0;
 }
 
-.label,
-.input {
+.tasks__text,
+.tasks__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -45,17 +45,18 @@
   display: flex;
 }
 
-.list {
+.tasks__list {
   margin: 0;
   padding: 0px;
 }
 
-.item,
+.tasks__item,
 .h3 {
   list-style: none;
 }
 
-.input,
+.tasks__checkbox,
+.tasks__text,
 .btn{
   outline: none;
 }
@@ -76,7 +77,7 @@
 
 /* Heading */
 .h3,
-.label[for="new-task"] {
+.add-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +87,7 @@
   text-transform: uppercase;
 }
 
-.input[type="text"] {
+.tasks__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,22 +100,22 @@
   color: #888;
 }
 
-.input[type="text"]:focus {
+.tasks__text:focus {
   color: #333;
 }
 
 /* New Task */
-.label[for="new-task"] {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.input#add-task__create {
+.add-task__create {
   width: 318px;
 }
 
 /* Task list */
-.item {
+.tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -124,34 +125,32 @@
   align-items: center;
 }
 
-.item > * {
+.tasks__item > * {
   vertical-align: middle;
 }
 
-.item > .input[type="checkbox"] {
+.tasks__item > .tasks__checkbox {
   margin: 0 10px;
 }
 
-.item > .label {
+.tasks__item > .tasks__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.item >    .input[type="text"] {
+.tasks__item >    .tasks__text {
   width: 226px;
 }
 
-.current-tasks__img,
-.completed-tasks__img {
+.tasks__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.current-tasks__img:hover,
-.completed-tasks__img:hover {
+.tasks__img:hover {
   transform: rotateZ(0);
 }
 
@@ -162,17 +161,15 @@
 }
 
 /* Edit Task */
-.list .item .input[type="text"] {
+.tasks__item .tasks__text {
   display: none;
 }
 
-.list .current-tasks__item_edit .input[type="text"],
-.list .completed-tasks__item_edit .input[type="text"] {
+.tasks__item_edit .tasks__text {
   display: inline-block;
   width: 224px;
 }
 
-.list .current-tasks__item_edit .label,
-.list .completed-tasks__item_edit .label {
+.tasks__item_edit .tasks__label {
   display: none;
 }
